@@ -1,0 +1,23 @@
+body { font-family: sans-serif;
+     background: #eee;
+     text-align: center;
+    }
+.vehiculos button {
+    background: none;
+     border: none;
+     cursor: pointer;
+}
+.vehiculos img {
+     width: 100px; 
+     height: 80px; 
+     object-fit: contain; 
+      margin: 10px;
+    }
+#resultados input {
+     width: 120px;
+     text-align: right;
+    }
+button {
+     margin: 5px;
+     padding: 8px 14px;
+    }
