@@ -3,15 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Peaje Popayán</title>
-  <style>
-    body { font-family: sans-serif; background: #eee; text-align: center; }
-    #btnAuto, #btnBus, #btnCamion { width: 100px; height: 100px; margin: 10px; font-size: 40px; }
-    #resultados input { width: 120px; text-align: right; }
-    button { margin: 5px; padding: 8px 14px; }
-  </style>
+  <link rel="stylesheet" href="mio.css">
 </head>
 <body>
-  <h2> Peaje Popayán El Tambo </h2>
+  <h2 style="color:blue">peaje del tambo </h2>
 
   <button id="btnAbrir">Abrir peaje</button>
-  <button id="btnCerrar" dis
+  <button id="btnCerrar" disabled>Cerrar peaje</button>
+
+  <div class="vehiculos">
+    <button id="btnCarro" disabled>
+      <img src="carro.webp" alt="carro">
+    </button>
+    <button id="btnBus" disabled>
+      <img src="debus.jpg" alt="Bus">
+    </button>
+    <button id="btnCamion" disabled>
+      <img src="camion.jpg" alt="Camión">
+    </button>
+  </div>
+
+  <div id="resultados">
+    <p>Autos: <input type="text" id="txtCarros" readonly></p>
+    <p>Buses: <input type="text" id="txtBuses" readonly></p>
+    <p>Camiones: <input type="text" id="txtCamiones" readonly></p>
+    <p>Total: <input type="text" id="txtTotal" readonly></p>
+  </div>
+
+  <script type="module" src="imporpeaje.js"></script>
+</body>
+</html>
+
