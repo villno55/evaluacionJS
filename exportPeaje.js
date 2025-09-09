@@ -1,0 +1,5 @@
+import Peaje from "./peaje.js";
+import { actualizarUI, habilitarControles } from "./ui.js";
+
+const peaje = new Peaje();
+
